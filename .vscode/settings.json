@@ -1,0 +1,4 @@
+{
+    "sigma.sigconverterBackend": "elasticsearch",
+    "sigma.author": "Shawn Wilder"
+}

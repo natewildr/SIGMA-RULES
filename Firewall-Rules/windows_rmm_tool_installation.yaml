@@ -1,0 +1,22 @@
+title: Windows RMM Tool Installation
+id: 9944010f-5693-451f-99a8-7bdfd5111a6a
+status: experimental
+description: This rule will detect when commonly used remote management tools are installed on Windows endpoint.
+references:
+    - https://www.varonis.com/blog/rmm-tools#:~:text=Abuse%20existing%20RMM%20tools%3A%20Attackers,gain%20access%20without%20triggering%20detection.
+    - https://redcanary.com/threat-detection-report/trends/rmm-tools/
+author: Shawn Wilder
+date: 2025-03-05
+tags:
+    - 
+logsource:
+    category: service started
+    product: windows
+    service: activitylogs
+detection:
+    selection:
+        
+    condition: selection
+falsepositives:
+    - Networking and Help Desk teams commonly use rmm tools for official purposes. Will need to exclude those used by your organization.
+level: medium
